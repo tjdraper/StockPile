@@ -33,6 +33,6 @@ class Plugin_stockpile extends Plugin
 		$name = $this->fetchParam('name');
 
 		// Return the value
-		$this->blink->get($name);
+		return $this->blink->get($name);
 	}
 }
