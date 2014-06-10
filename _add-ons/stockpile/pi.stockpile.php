@@ -3,7 +3,7 @@ class Plugin_stockpile extends Plugin
 {
 	var $meta = array(
 		'name' => 'StockPile',
-		'version' => '1.0.0',
+		'version' => '1.0.1',
 		'author' => 'TJ Draper',
 		'author_url' => 'http://buzzingpixel.com'
 	);

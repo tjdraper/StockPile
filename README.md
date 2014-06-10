@@ -1,4 +1,4 @@
-#StockPile 1.0.0 for Statamic
+#StockPile 1.0.1 for Statamic
 
 A Statamic plugin to set content in a template and retrieve it in the layout (or at any point after it’s set.).
 
