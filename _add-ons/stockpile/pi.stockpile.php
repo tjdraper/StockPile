@@ -18,7 +18,7 @@ class Plugin_stockpile extends Plugin
 
 		if ($content != '' AND $name != '') {
 			// If parsing tags
-			if ($parse_tags == 'yes' AND $content != '') {
+			if ($parse_tags == 'yes') {
 				$content = Parse::template($content, array());
 			}
 
