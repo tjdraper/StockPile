@@ -22,8 +22,8 @@ class Plugin_stockpile extends Plugin
 				$content = Parse::template($content, array());
 			}
 
-			// Set the content as a super global
-			$GLOBALS['stockpile_' . $name] = $content;
+			// Save the content to the blink cache
+			$this->blink->set($name, $content);
 		}
 
 	}
@@ -32,9 +32,7 @@ class Plugin_stockpile extends Plugin
 		// Get params
 		$name = $this->fetchParam('name');
 
-		// Make sure the thing we're trying to get exists so no errors are thrown, then return that content
-		if ($name != '' AND isset($GLOBALS['stockpile_' . $name]) == true) {
-			return $GLOBALS['stockpile_' . $name];
-		}
+		// Return the value
+		return $this->blink->get($name);
 	}
 }
