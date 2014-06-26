@@ -56,7 +56,7 @@ First I set my title in the taxonomy template:
 
 Then I get it conditionally in my header partial:
 
-	<title>{{ if title }}{{ title }}{{ else }}{{ stockpile:get name="meta_title" }}{{ endif }}{{ if get:page != "" }}{{ get_content from="/" }} | {{ meta_title_suffix|smartypants }}{{ /get_content }}</title>
+	<title>{{ if title }}{{ title }}{{ else }}{{ stockpile:get name="meta_title" }}{{ endif }}{{ get_content from="/" }} | {{ meta_title_suffix|smartypants }}{{ /get_content }}</title>
 
 That's my primary use case right now, but I'm sure there's a lot of other uses this can be put to.
 
